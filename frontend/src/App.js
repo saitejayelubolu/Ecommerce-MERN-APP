@@ -10,7 +10,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
-import Checkout from "./components/Checkout";
+
 import AdminDashboard from "./components/AdminDashboard";
 import NavBar from "./components/NavBar";
 
@@ -54,7 +54,6 @@ function App() {
           {user && user.role === "customer" && (
             <>
               <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout />} />
             </>
           )}
 

@@ -14,15 +14,6 @@ function NavBar({ user, onLogout }) {
 
       {user ? (
         <>
-          {/* {user.role === "customer" && (
-              <>
-                
-                  <Link to="/cart">Cart</Link>
-                
-                  <Link to="/checkout">Checkout</Link>
-               
-              </>
-            )} */}
           {user.role === "admin" && (
             <div className="text-end p-2">
               <button
